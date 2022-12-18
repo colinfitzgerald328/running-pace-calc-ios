@@ -25,22 +25,25 @@ struct ContentView: View {
     @State var result: String = ""
     
     var body: some View {
-        VStack {
+            HStack {
+                Text("Running Pace Calculator").font(.headline).padding(8)
+            }
+        VStack(alignment: .center) {
             HStack {
                 Text("Running Time:")
-                TextField("Enter a value", text: $input1)
+                TextField("Enter a value", text: $input1).frame(width: 150, height: 20)
                     .padding(8)
                     .background(Color.gray)
             }
             HStack {
                 Text("Running Pace:")
-                TextField("Enter a value", text: $input2)
+                TextField("Enter a value", text: $input2).frame(width: 150, height: 20)
                     .padding(8)
                     .background(Color.gray)
             }
             HStack {
                 Text("Running Distance:")
-                TextField("Enter a value", text: $input3)
+                TextField("Enter a value", text: $input3).frame(width: 150, height: 20)
                     .padding(8)
                     .background(Color.gray)
             }
@@ -102,6 +105,21 @@ struct ContentView: View {
             }
             Text(result)
         }
-        .padding(16)
+        VStack(alignment: .leading) {
+            HStack {
+                Text("Who Uses a Pace Calculator?").font(.headline).padding(8)
+            }
+            HStack {
+                Text("Both new and experienced runners can benefit from pace calculators. Knowing your pace can help you train and run better, whether you're running your first race, striving to set a personal best, or going for a training run.").padding(8)
+            }
+            HStack {
+                Text("Why are pace calculators useful?").font(.headline).padding(8)
+            }
+            HStack {
+                Text("Pace calculators can help you figure out how quickly you should run if you have a specific finish time in mind for a particular distance or race. Find out what speed you need to run a 20-minute 5K or a sub-1:30 half marathon, for example.Pace calculators can also be used to figure out what your pace was during a training run in the neighborhood or on the track.Find out how quickly you ran for that 30-minute 4-mile training run, for example.Finally, they can assist you in determining the distance you ran. For example, you may figure out how far you ran by entering your pace and the length of your training run or race.")
+                    .padding(8)
+            }
+        }
     }
+
 }

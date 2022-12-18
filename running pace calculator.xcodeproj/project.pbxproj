@@ -16,6 +16,20 @@
 		3C6D59D4294EEB6000AF98C0 /* running_pace_calculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D59D3294EEB6000AF98C0 /* running_pace_calculatorUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		3C5E2666294F83DB004FF508 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		3C6D59C4294EEB6000AF98C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -141,6 +155,7 @@
 				3C6D59B0294EEB5F00AF98C0 /* Resources */,
 			);
 			buildRules = (
+				3C5E2666294F83DB004FF508 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
