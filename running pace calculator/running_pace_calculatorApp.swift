@@ -36,23 +36,26 @@ struct ContentView: View {
                 }
             VStack(alignment: .center){
                 HStack {
-                        Text("Running Time:")
+                        Text("Running Time:").font(.system(size: 22))
                         TextField("Enter a value", text: $input1).frame(width: 150, height: 20)
-                            .padding(8)
+                            .font(.system(size: 22))
+                            .padding(20)
                             .background(Color.gray)
                             .cornerRadius(8)
                     }
                     HStack {
-                        Text("Running Pace:")
+                        Text("Running Pace:").font(.system(size: 22))
                         TextField("Enter a value", text: $input2).frame(width: 150, height: 20)
-                            .padding(8)
+                            .font(.system(size: 22))
+                            .padding(20)
                             .background(Color.gray)
                             .cornerRadius(8)
                     }
                     HStack {
-                        Text("Running Distance:")
+                        Text("Running Distance:").font(.system(size: 22))
                         TextField("Enter a value", text: $input3).frame(width: 150, height: 20)
-                            .padding(8)
+                            .font(.system(size: 22))
+                            .padding(20)
                             .background(Color.gray)
                             .cornerRadius(8)
                     }
@@ -111,9 +114,13 @@ struct ContentView: View {
                         hideKeyboard()
                         
                     }) {
-                        Text("Calculate")
+                        Text("Calculate").font(.title)
+                            .padding(8)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
                     }
-                    Text(result)
+                    Text(result).font(.system(size: 30))
                 }
                 VStack(alignment: .leading) {
                     HStack {
