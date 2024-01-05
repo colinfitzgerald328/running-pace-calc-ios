@@ -2,7 +2,7 @@ repo_name: colinfitzgerald328/running-pace-calc-ios
 report_id: d5a34b144fbdc77e38bf202a47f3ce79
 version: 0.1
 repo_type: Public
-timestamp: '2023-12-19T22:08:08+00:00'
+timestamp: '2024-01-05T08:19:52+00:00'
 requested_by: colinfitzgerald328
 provider: github
 branch: main
@@ -17,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1009/tuHsaI2U.png
+  detection_source_url: https://github.com/colinfitzgerald328/running-pace-calc-ios
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -26,4 +27,5 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/colinfitzgerald328/running-pace-calc-ios
   detection_source: Repo Metadata
